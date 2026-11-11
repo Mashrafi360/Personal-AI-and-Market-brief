@@ -2,7 +2,7 @@
 
 An AI-generated, twice-daily brief that turns a noisy X (Twitter) feed into a calm, readable summary of **AI**, **tech** and **US-market** news.
 
-**[View the live demo →](https://YOUR-USERNAME.github.io/market-brief/)** (shows a sample brief)
+**[View the live demo →](https://Mashrafi360.github.io/market-brief/)** (shows a sample brief)
 
 ![Screenshot of the brief](screenshot.png)
 
