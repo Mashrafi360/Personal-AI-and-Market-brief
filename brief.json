@@ -1,0 +1,772 @@
+{
+ "covered_until": "2026-11-11T11:00:00Z",
+ "current": {
+  "edition": "morning",
+  "label": "Morning brief · Test run",
+  "date": "2026-11-11",
+  "date_label": "Wednesday, 11 November",
+  "covered_from": "2026-11-10T11:00:00Z",
+  "covered_until": "2026-11-11T11:00:00Z",
+  "covered_label": "5 PM Tue → 5 PM Wed (Dhaka)",
+  "source": "lists",
+  "title": "A huge AI model week, agent teams go mainstream, and Nvidia's CEO crisis meets a hawkish Fed",
+  "watch_title": "Watch tonight · US open 8:30 PM Dhaka",
+  "watch": [
+   [
+    "Nvidia",
+    "Any board, CEO or Commerce update. Sets the tone for AI stocks."
+   ],
+   [
+    "Rates",
+    "Bond yields and Fed speakers after the hot CPI."
+   ],
+   [
+    "Anthropic",
+    "IPO pricing; above $78 confirms strong demand."
+   ],
+   [
+    "Models",
+    "More Gemini today; GPT-6.2 rumored Thursday."
+   ],
+   [
+    "Oil",
+    "Hormuz headlines; escalation feeds inflation."
+   ]
+  ],
+  "notes": [
+   "Built from about 160 posts with real engagement in your three Lists. Chart posts filtered out.",
+   "No exact index closes yet; biotech coverage is thin until more accounts are added.",
+   "Reports what accounts say. Not financial advice."
+  ],
+  "items": [
+   {
+    "tab": "ai",
+    "group": "Models",
+    "level": "high",
+    "t": "A huge week of AI model launches",
+    "s": "Claude Fable 5.2 arrived Tuesday, Google is shipping Gemini models two days running, Alibaba previewed Qwen4, and GPT-6.2 is rumored for Thursday.",
+    "b": "Anthropic released Claude Fable 5.2 on Tuesday. SemiAnalysis founder Dylan Patel says it is significantly better at chip design, software engineering and biology, and Ethan Mollick is already comparing it with Google's new Gemini 4 Carbon on hard research-style questions. Google followed with a second day of Gemini releases, and a lighter, faster \"Gemini 4 Hydrogen\" (Flash) model is widely expected. Alibaba opened a Qwen4-Max preview in Qwen Chat and its Agent Mode, promising deeper knowledge and stronger coding and agent skills. It shipped without benchmarks, though, and early chatter calls it disappointing. Watchers also expect OpenAI to ship GPT-6.2 on Thursday, which is still a rumor.",
+    "why": "Several frontier labs shipping within days shows how fast the race is moving. Each round tends to bring better reasoning and coding, lower prices, and a reshuffle of which model leads.",
+    "detail": "<p>For markets, new models drive demand for chips and cloud capacity. Across the industry, each release resets the leaderboard on coding, reasoning and price. The Qwen4 reaction also shows that a launch without published benchmarks now gets treated with suspicion.</p>",
+    "simple": "<p>AI companies regularly release new \"brains\" (models) that are smarter or cheaper. This week several big ones arrived almost at once, so the AI tools people use may suddenly get noticeably better.</p>",
+    "src": [
+     [
+      "@kimmonismus",
+      "https://x.com/kimmonismus/status/2120411668597682204"
+     ],
+     [
+      "@testingcatalog (Gemini)",
+      "https://x.com/testingcatalog/status/2120412468757287371"
+     ],
+     [
+      "@testingcatalog (Qwen4)",
+      "https://x.com/testingcatalog/status/2120427059302297633"
+     ],
+     [
+      "@kimmonismus (Qwen rumor)",
+      "https://x.com/kimmonismus/status/2120461099745096146"
+     ],
+     [
+      "@emollick",
+      "https://x.com/emollick/status/2120359214157603139"
+     ],
+     [
+      "@dylan522p",
+      "https://x.com/dylan522p"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Research",
+    "level": "high",
+    "t": "AI ported software to new chips in about 3 days",
+    "s": "Anthropic says Claude got itself running on AMD GPUs almost without human help, a job that used to take dozens of engineers 6–12 months.",
+    "b": "Anthropic says its Claude Mythos model got Claude running on AMD's MI355X GPUs in about three days with almost no human help. Bringing up a new chip platform used to take dozens of engineers 6 to 12 months. Anthropic presented this in its IPO road show as proof it is \"really good at bringing up new chips,\" noting it started working with AMD GPUs for the first time this year.",
+    "why": "A concrete example of AI completing long, multi-step engineering work largely on its own. That's the direction agentic tools like Claude Code and Cursor are heading.",
+    "mk": "If AI can port software to new chips this fast, Nvidia's software lock-in (its CUDA ecosystem) weakens. That's a plus for <span class='tk'>$AMD</span> and other chipmakers.",
+    "simple": "<p>Most AI software is written for Nvidia chips, which keeps customers loyal to Nvidia. If AI can rewrite that software for other chips, like AMD's, in days instead of months, companies can switch more easily. That's good news for AMD and a small threat to Nvidia.</p>",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120313107360997690"
+     ],
+     [
+      "@AndrewCurran_",
+      "https://x.com/AndrewCurran_/status/2120323074860179674"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Tools & agents",
+    "level": "high",
+    "t": "Agent teams go mainstream",
+    "s": "Cursor and Google both shipped ways for several AI agents to work together on one job, the clearest trend of the week.",
+    "b": "Cursor rebuilt its Projects feature for \"multiplayer\" work: every teammate and their AI agents can now work together in one shared workspace. Google's Antigravity added a <span class='tk'>/swarm</span> command that splits a task across several agents running in parallel, which talk to each other on a shared message board. Claude Code users are also sharing setups where different models plan, build, review and run tasks side by side.",
+    "why": "Using AI is shifting from chatting with one assistant to managing a team of agents. Directing and checking agents is becoming one of the most valued skills in the industry.",
+    "simple": "<p>Instead of one AI helper doing everything, you get a small team: one plans, one writes, one checks, like a group project where each member has a job. The new tools let these AI helpers pass notes to each other so they can work at the same time.</p>",
+    "src": [
+     [
+      "@cursor_ai",
+      "https://x.com/cursor_ai/status/2120295553309565139"
+     ],
+     [
+      "@testingcatalog",
+      "https://x.com/testingcatalog/status/2120311786675019824"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Tools & agents",
+    "level": "med",
+    "t": "Businesses can now claim a profile inside ChatGPT",
+    "s": "OpenAI lets any business shape how it appears in ChatGPT. Some call it a \"Google My Business moment\" for AI.",
+    "b": "OpenAI opened a way for businesses to claim a profile inside ChatGPT and use it to engage with customers, as Greg Brockman announced. A shop, restaurant or brand can now shape what ChatGPT shows when people ask about it. Startup investor Greg Isenberg calls it a possible \"Google My Business moment\": in the 2010s, agencies built big businesses simply helping local companies claim and manage their Google listings.",
+    "why": "Being found inside AI assistants may become as important as being found on Google search, which opens a new marketing channel and a new service industry around it.",
+    "src": [
+     [
+      "@gdb",
+      "https://x.com/gdb/status/2120222471412666562"
+     ],
+     [
+      "@gregisenberg",
+      "https://x.com/gregisenberg/status/2120250534670012721"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Tools & agents",
+    "level": "med",
+    "t": "Claude adds Whiteboards, Sheets and Data",
+    "s": "Anthropic is moving Claude beyond chat into boards, spreadsheets and data storytelling.",
+    "b": "Anthropic started rolling out three new tools inside Claude: Whiteboards for thinking a plan through visually, Sheets for building trackers and tables, and Data for turning numbers into charts and stories. The announcement was one of the most-liked posts in your Tech List this week, with over 54,000 likes.",
+    "why": "Claude is expanding from a chat assistant into everyday work tools, competing more directly with spreadsheet and whiteboard apps.",
+    "src": [
+     [
+      "@claudeai",
+      "https://x.com/claudeai/status/2120206365759094857"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Research",
+    "level": "med",
+    "t": "Most AI progress may come from better data, not new algorithms",
+    "s": "New evidence on what actually makes models smarter, which Dwarkesh Patel says got buried in a busy news week.",
+    "b": "Podcaster Dwarkesh Patel highlighted research suggesting that recent progress in pretraining (the first and biggest stage of training a model) has come mostly from improvements in data rather than from new algorithms. He argues it got overlooked because it came out the same day as a major math announcement.",
+    "why": "Suggests data quality, not just bigger models or new architectures, is a main lever for progress. That puts the spotlight on companies that own or create high-quality data.",
+    "term": [
+     "Pretraining",
+     "the first stage of training, where a model reads a huge amount of text to learn language and facts before it's tuned to follow instructions."
+    ],
+    "simple": "<p>Training an AI is a bit like a student studying from books. This research suggests models got smarter mostly because they were given better books, not because the student's brain was redesigned.</p>",
+    "src": [
+     [
+      "@dwarkesh_sp",
+      "https://x.com/dwarkesh_sp/status/2120359285398155623"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Research",
+    "level": "med",
+    "t": "Validation posted for OpenAI's Yang–Mills construction",
+    "s": "Independent experts reviewed an AI-assisted result in one of the hardest areas of math and physics.",
+    "b": "A Yang–Mills working group has posted its validation of a construction from OpenAI. Yang–Mills theory underpins particle physics, and parts of it are among the hardest open problems in mathematics. The exact scope of what was shown matters a lot in math, so it's worth reading the source before drawing conclusions.",
+    "why": "AI is moving from answering questions to contributing to frontier research, with outside experts now checking its work.",
+    "simple": "<p>Yang–Mills is the math behind how forces inside atoms work, and some of its questions have stumped mathematicians for decades. Experts checked work produced with OpenAI's help and posted their review. I couldn't confirm exactly what was proven, so treat it as \"interesting, check the details.\"</p>",
+    "src": [
+     [
+      "@AndrewCurran_",
+      "https://x.com/AndrewCurran_/status/2120366311473828243"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Models",
+    "level": "low",
+    "t": "New music model beats Suno on a vocal leaderboard",
+    "s": "ACE Studio's ACE Music v1 debuted at #1 on Artificial Analysis's vocal-music ranking.",
+    "b": "ACE Music v1 took first place on Artificial Analysis's AA-Music-Vocal leaderboard, ahead of Suno v6, the best-known AI music app. ACE Studio, founded in 2018, started in AI singing-voice synthesis and makes an AI music workstation app.",
+    "why": "AI music generation is getting competitive fast, and independent leaderboards now rank it the way they rank text models.",
+    "src": [
+     [
+      "@ArtificialAnlys",
+      "https://x.com/ArtificialAnlys/status/2120337324898992298"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Tools & agents",
+    "level": "low",
+    "t": "ChatGPT's old voice modes retire December 11",
+    "s": "Watchers read it as a sign a new real-time voice model is coming soon.",
+    "b": "OpenAI will retire Advanced and Standard voice from ChatGPT Voice on December 11, 2026. TestingCatalog reads this as a hint that an upgraded real-time voice model will arrive before then, possibly in an end-of-year launch series.",
+    "src": [
+     [
+      "@testingcatalog",
+      "https://x.com/testingcatalog/status/2120318908188295399"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Industry",
+    "level": "low",
+    "t": "Europe's Helsing launches an AI rival to Palantir's Maven",
+    "s": "\"Clarity\" runs hundreds of AI agents in parallel over military data.",
+    "b": "German defense-AI company Helsing unveiled Clarity, a platform that runs hundreds of AI agents in parallel to analyze data from satellites, drones, sensors and military reports. It's pitched as a European alternative to Palantir's Maven, which the US military uses for similar intelligence work.",
+    "why": "Another large multi-agent system reaching real products, and a sign Europe is building its own defense-tech stack.",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120466710503489537"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Industry",
+    "level": "low",
+    "t": "Barclays: AI agents could trade up to 65% of US investment-grade bonds",
+    "s": "Agents are coming to finance too.",
+    "b": "Barclays estimates AI agents will handle up to 65% of trading in US investment-grade corporate bonds. Bond trading has been moving from phone calls to electronic platforms for years, and agents would push that further, with software negotiating and executing trades.",
+    "src": [
+     [
+      "@unusual_whales",
+      "https://x.com/unusual_whales/status/2120148720989962533"
+     ]
+    ]
+   },
+   {
+    "tab": "ai",
+    "group": "Explainer",
+    "level": "low",
+    "t": "Explainer: AI agents and agent teams",
+    "s": "What an agent is, and why everyone is shipping \"swarms\" this week.",
+    "b": "An AI agent is a model that can take actions, like running code, browsing or editing files, in a loop until a goal is reached, instead of only replying with text. An agent team splits one job across several agents with different roles (planner, builder, reviewer) that share notes. This week Cursor, Google's Antigravity and Claude Code users all moved in this direction.",
+    "detail": "<ul><li><b>Why teams:</b> splitting work lets each agent focus, and a separate reviewer catches mistakes the builder misses.</li><li><b>The catch:</b> more agents means more cost and more ways to go wrong, so clear instructions and checking the output matter more than ever.</li><li><b>Where it's heading:</b> today's stories, from AI porting chip software to Helsing's defense platform, are all agents doing long tasks with less human help.</li></ul>",
+    "simple": "<p>A chatbot answers your question. An agent does the task: it tries something, checks the result, and tries again until it's done. An agent team is several of these working together, like a group project where everyone has a job.</p>"
+   },
+   {
+    "tab": "news",
+    "level": "high",
+    "t": "Nvidia CEO scandal escalates",
+    "s": "Huang linked to a suspected Chinese spy, a senator wants him out, shareholders sue, and shares hit −7% intraday.",
+    "b": "The New York Times reported that Trump was warned, before a May trip to Beijing, that Nvidia CEO Jensen Huang was romantically involved with a woman US intelligence suspected of being a Chinese spy. Huang first denied the affair, then admitted it, and Nvidia opened an investigation. Republican Senator Kevin Cramer of the Senate Banking Committee says Huang should step down, shareholders have sued over the ties being kept from investors, and the NY Post reports a Commerce probe into Megaspeed, the firm run by the executive at the center of the story, was paused after Nvidia spoke to a top official. Trump still calls Huang \"a very honorable man\" but says he won't join his next China visit. Nvidia shares fell as much as 7% during Tuesday's session.",
+    "why": "<span class='tk'>$NVDA</span> is the bellwether for the whole AI trade. Losing its CEO or facing tighter China export scrutiny would hit chip and AI infrastructure stocks broadly.",
+    "term": [
+     "Key-person risk",
+     "when a company's value depends heavily on one leader, so news about that person moves the stock as much as the business does."
+    ],
+    "detail": "<p>Three separate risks are stacking up:</p><ul><li><b>Leadership.</b> Huang co-founded Nvidia and drives its strategy. Even a small chance he leaves forces investors to reprice the stock.</li><li><b>Export controls.</b> The NYT also reports Commerce approved Nvidia chip sales to Chinese buyers that didn't exist, were sanctioned, or had military ties, and a Chinese military-linked university reportedly bought H200 chips despite the blacklist. That could lead to tighter rules.</li><li><b>Legal.</b> The shareholder lawsuit adds cost and headlines, whatever its outcome.</li></ul><p><b>What to watch:</b> findings of Nvidia's investigation, any move by Commerce or Congress, and whether Trump's support holds.</p>",
+    "simple": "<p>Picture the captain of the most important ship in a fleet suddenly being investigated. The ship may be fine, but everyone worries about who will steer it. Nvidia makes the chips almost every AI company depends on, so when its boss is in trouble, investors get nervous about AI stocks in general.</p>",
+    "src": [
+     [
+      "@FirstSquawk (NYT)",
+      "https://x.com/FirstSquawk/status/2120304570199118056"
+     ],
+     [
+      "@FirstSquawk (Trump)",
+      "https://x.com/FirstSquawk/status/2120304606584693240"
+     ],
+     [
+      "@FirstSquawk (Cramer)",
+      "https://x.com/FirstSquawk/status/2120349781612736665"
+     ],
+     [
+      "@unusual_whales (lawsuit)",
+      "https://x.com/unusual_whales/status/2120405160795288062"
+     ],
+     [
+      "@unusual_whales (Megaspeed)",
+      "https://x.com/unusual_whales/status/2120350299445772617"
+     ],
+     [
+      "@unusual_whales (exports)",
+      "https://x.com/unusual_whales/status/2120328405283680517"
+     ],
+     [
+      "@solidintel_x (H200)",
+      "https://x.com/solidintel_x/status/2120443221704622318"
+     ],
+     [
+      "@DeItaone (−7%)",
+      "https://x.com/DeItaone"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "high",
+    "t": "Hot inflation puts Fed hikes back in play",
+    "s": "Goldman now expects hikes in December and March; yields and the dollar rose and Wall Street fell.",
+    "b": "October's consumer price index (CPI) came in hotter than expected across several categories, the third month in a row of worse inflation news. Goldman Sachs now forecasts a 25 bp rate hike in December and another in March, and pushed its first expected cut much further out. Hawkish comments from Fed officials added to it: the dollar and bond yields rose, and Wall Street closed with broad-based losses. Asian bond yields also climbed on bets the Fed will raise rates.",
+    "why": "Higher rates make future profits worth less today, which hits high-growth tech hardest.",
+    "term": [
+     "Basis point (bp)",
+     "one hundredth of a percent. 25 bp = 0.25%."
+    ],
+    "detail": "<ul><li><b>Why \"several categories\" matters:</b> when one item jumps the Fed can call it a blip. When many rise together, it's harder to ignore.</li><li><b>Energy link:</b> analysts point to energy-driven transportation services as a big culprit, which is why the Hormuz and oil headlines matter for rates too.</li><li><b>Who gets hurt most:</b> growth and AI stocks whose profits are expected years from now, plus long-term bonds.</li></ul><p><b>What to watch:</b> Fed speakers, the 2-year Treasury yield, and the next inflation data before the December meeting.</p>",
+    "simple": "<p>The Fed works like a thermostat for the economy. When prices rise too fast, it cools things down by raising interest rates, which makes borrowing more expensive. Fast-growing tech companies get hit hardest, because their big profits are far in the future and look less attractive when bonds pay more today.</p>",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120427323015188971"
+     ],
+     [
+      "@zerohedge",
+      "https://x.com/zerohedge/status/2120366083219526117"
+     ],
+     [
+      "@FirstSquawk",
+      "https://x.com/FirstSquawk/status/2120353271516901482"
+     ],
+     [
+      "@FirstSquawk (Asia yields)",
+      "https://x.com/FirstSquawk/status/2120342765884334341"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "high",
+    "t": "CoreWeave beats across the board, stock +13%",
+    "s": "Revenue +168%, guidance raised, demand 10x capacity; Nasdaq 100 futures rose almost 1%.",
+    "b": "CoreWeave, which rents out GPUs to AI companies, reported Q3 revenue of $3.66B against $3.55B expected, up 168% from a year ago, with its backlog of signed contracts up 138%. It raised its 2026 guidance, slightly increased spending plans, and plans no new unsecured debt through 2027. Management said it has about 10x more qualified demand than capacity, interest in 2028 capacity is already several times what it has, prices rose about 25%, and customers fund 70–100% of the cost of new buildouts.",
+    "why": "Direct evidence AI compute demand still outruns supply, supportive for other neoclouds (<span class='tk'>$NBIS</span>, <span class='tk'>$IREN</span>) and their chip and power suppliers.",
+    "term": [
+     "Neocloud",
+     "a newer cloud company that mainly rents out GPUs for AI, unlike big general clouds such as AWS."
+    ],
+    "detail": "<ul><li><b>Why financing is the real news:</b> the main bear case on neoclouds was heavy borrowing to build data centers. Customers paying most of the cost upfront lowers that risk a lot.</li><li><b>Read-through:</b> traders expect similar strength at <span class='tk'>$NBIS</span> (earnings coming up) and <span class='tk'>$IREN</span>.</li><li><b>The other side:</b> SoftBank's pullback and Fortune's \"premature end to the AI datacenter boom\" story show not everyone agrees.</li></ul>",
+    "simple": "<p>Think of CoreWeave as a landlord renting out super-powerful computers to AI companies. It says ten times more people want to rent than it has computers for, and tenants even pay upfront to help build new ones. That's a strong sign AI demand is real.</p>",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120336881053466888"
+     ],
+     [
+      "@aleabitoreddit",
+      "https://x.com/aleabitoreddit/status/2120391635737649423"
+     ],
+     [
+      "@FirstSquawk (futures)",
+      "https://x.com/FirstSquawk/status/2120330427542237693"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "med",
+    "t": "Anthropic IPO heading to $1.5T+",
+    "s": "Bankers may price above the $70–78 range; Nvidia plans to invest $10B at the IPO price.",
+    "b": "According to the FT, Anthropic's bankers are preparing to raise the IPO price above the $70–78 per-share range, which would value the company at $1.5 trillion or more and push total fundraising above $100B, including about $26B raised privately. Nvidia plans to invest $10B at the IPO price. Anthropic has committed to roughly $664B of compute, about five times its cash and short-term holdings.",
+    "why": "The largest AI listing so far. Strong pricing lifts sentiment across AI names; a weak debut does the opposite.",
+    "detail": "<ul><li><b>Why raise the price:</b> bankers lift the range when orders far exceed the shares on offer.</li><li><b>Speculation building:</b> a 3x leveraged Anthropic ETF is launching in Europe, holding cash until the shares list.</li><li><b>Risks:</b> huge compute commitments relative to cash, and a valuation that leaves little room for disappointment.</li></ul>",
+    "simple": "<p>An IPO is when a private company sells shares to the public for the first time. Raising the price means more investors want in than there are shares to go around. A hot Anthropic IPO usually lifts the mood for all AI stocks.</p>",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120314422476607619"
+     ],
+     [
+      "@unusual_whales",
+      "https://x.com/unusual_whales/status/2120331422850548202"
+     ],
+     [
+      "@wallstengine (Nvidia $10B)",
+      "https://x.com/wallstengine/status/2120441333622145292"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "med",
+    "t": "SoftBank −10% after a $7B loss",
+    "s": "It's weighing a pullback from aggressive AI investing.",
+    "b": "SoftBank swung to a $7 billion quarterly loss and its shares fell about 10%. The company says it is weighing a pullback from its aggressive AI investments.",
+    "why": "One of AI's biggest funders easing off feeds the \"AI boom is peaking\" side of the debate, the opposite signal to CoreWeave on the same day.",
+    "simple": "<p>SoftBank is like a giant investor writing huge checks to AI companies. After losing money, it says it may write smaller ones. If big funders slow down, the AI building boom could cool.</p>",
+    "src": [
+     [
+      "@zerohedge",
+      "https://x.com/zerohedge/status/2120315569987592470"
+     ],
+     [
+      "@unusual_whales",
+      "https://x.com/unusual_whales/status/2120224721753247997"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "med",
+    "t": "Iran tension around Hormuz",
+    "s": "Iran's IRGC claims two tankers hit mines; Iran threatens strikes on distant US bases.",
+    "b": "Iran's Revolutionary Guard claims two tankers hit mines in the Strait of Hormuz overnight (reported by Iran's Fars agency, not independently confirmed). Iran warns any US attack would trigger strikes on distant US bases, and its security chief says no enriched nuclear material will leave the country. Axios reports Secretary Rubio told G7 peers that Trump chose to pressure Iran's regime rather than go to war or strike a deal.",
+    "why": "Roughly a fifth of the world's oil normally passes through Hormuz. Escalation pushes oil up, which feeds the inflation and Fed-hike worry.",
+    "simple": "<p>The Strait of Hormuz is a narrow sea passage that a big share of the world's oil ships pass through. Trouble there can push oil prices up, making almost everything more expensive and the Fed's inflation fight harder.</p>",
+    "src": [
+     [
+      "@FirstSquawk (tankers)",
+      "https://x.com/FirstSquawk/status/2120460311274950836"
+     ],
+     [
+      "@FirstSquawk (threat)",
+      "https://x.com/FirstSquawk/status/2120446026373075024"
+     ],
+     [
+      "@FirstSquawk (Rubio)",
+      "https://x.com/FirstSquawk/status/2120332445530894380"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "low",
+    "t": "US–China: AI crisis mechanism, magnets, oil",
+    "s": "Ambassador Perdue on AI safeguards talks and still-short magnet supply.",
+    "b": "Ambassador Perdue says the US and China are working on a crisis mechanism for AI, the US isn't getting the rare-earth magnet supply it wants, and Trump offered to swap China's Iranian oil for US oil.",
+    "simple": "<p>The US and China are still bargaining over key supplies, like special magnets China mostly controls and that go into EVs, robots and weapons, and over how to avoid AI-related accidents between them.</p>",
+    "src": [
+     [
+      "@zerohedge (AI)",
+      "https://x.com/zerohedge/status/2120366626314780687"
+     ],
+     [
+      "@zerohedge (magnets)",
+      "https://x.com/zerohedge/status/2120345986291888376"
+     ],
+     [
+      "@zerohedge (oil)",
+      "https://x.com/zerohedge/status/2120350718767022471"
+     ]
+    ]
+   },
+   {
+    "tab": "news",
+    "level": "low",
+    "t": "AI power and memory signals stay strong",
+    "s": "South Korea's chip exports +331% y/y in early November; Siemens Energy +7%.",
+    "b": "South Korea's chip exports jumped 331% year on year in the first 10 days of November. Siemens Energy rose 7% on AI-driven power demand, though its CEO said some data-center growth expectations \"were too ambitious.\"",
+    "src": [
+     [
+      "@wallstengine (Korea)",
+      "https://x.com/wallstengine/status/2120306230224896379"
+     ],
+     [
+      "@wallstengine (Siemens)",
+      "https://x.com/wallstengine/status/2120432129448579207"
+     ],
+     [
+      "@wallstengine (CEO)",
+      "https://x.com/wallstengine/status/2120429524148191341"
+     ]
+    ]
+   },
+   {
+    "tab": "narratives",
+    "group": "New",
+    "t": "\"Jensen risk\"",
+    "s": "Is Nvidia without Huang still Nvidia? The question spread within hours.",
+    "b": "Analysts are openly asking how to value Nvidia without its founder, and a US senator calls the situation a national security risk. AI researchers add that losing Huang would hurt US open-model efforts too.",
+    "src": [
+     [
+      "@natolambert",
+      "https://x.com/natolambert/status/2120308727173493160"
+     ],
+     [
+      "@AndrewCurran_",
+      "https://x.com/AndrewCurran_/status/2120354650071453885"
+     ]
+    ]
+   },
+   {
+    "tab": "narratives",
+    "group": "Split",
+    "t": "AI infrastructure: real demand or peaking boom?",
+    "s": "CoreWeave says 10x demand; SoftBank and Fortune point to a slowdown.",
+    "b": "<b>Bulls:</b> CoreWeave's 10x demand and customers paying for 70–100% of capex, with read-through to Nebius. <b>Bears:</b> SoftBank pulling back, Fortune's \"premature end to AI datacenter boom,\" Siemens Energy's CEO. Your traders leaned bullish after CoreWeave.",
+    "src": [
+     [
+      "@babyfolio",
+      "https://x.com/babyfolio/status/2120307040086110270"
+     ],
+     [
+      "@CKCapitalxx",
+      "https://x.com/CKCapitalxx/status/2120330373359976478"
+     ],
+     [
+      "@unusual_whales (Fortune)",
+      "https://x.com/unusual_whales/status/2120163820601778363"
+     ]
+    ]
+   },
+   {
+    "tab": "narratives",
+    "group": "Growing",
+    "t": "\"The Fed is hiking again\"",
+    "s": "Talk shifted from cuts to hikes after a third bad inflation month.",
+    "b": "Watch whether this spreads from bond traders to equity analysts.",
+    "src": [
+     [
+      "@zerohedge",
+      "https://x.com/zerohedge/status/2120366083219526117"
+     ],
+     [
+      "@FirstSquawk",
+      "https://x.com/FirstSquawk/status/2120342765884334341"
+     ]
+    ]
+   },
+   {
+    "tab": "narratives",
+    "group": "Growing",
+    "t": "Anthropic IPO as the next big event",
+    "s": "Debate over a \"conservative\" Q4 guide; the OpenAI rivalry is heating up.",
+    "b": "The Q4 guide is about $19.3B (~$77B annualized) vs $81B annualized October revenue run-rate; accounts expect a beat. There's also talk of OpenAI trying to steal attention before the listing.",
+    "src": [
+     [
+      "@jukan05",
+      "https://x.com/jukan05/status/2120419223373824386"
+     ],
+     [
+      "@zephyr_z9",
+      "https://x.com/zephyr_z9/status/2120424133846769978"
+     ],
+     [
+      "@kimmonismus",
+      "https://x.com/kimmonismus/status/2120438128213479599"
+     ]
+    ]
+   },
+   {
+    "tab": "narratives",
+    "group": "1 voice",
+    "t": "Equity dilution, like crypto in 2024",
+    "s": "One trader says companies are quietly issuing new shares.",
+    "b": "A single voice for now, worth tracking if more accounts pick it up.",
+    "term": [
+     "Dilution",
+     "when a company issues new shares, each existing share owns a smaller slice of the company."
+    ],
+    "src": [
+     [
+      "@zeroxkyle",
+      "https://x.com/zeroxkyle/status/2120456792237093112"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Chips",
+    "level": "med",
+    "t": "Google picks Arm CPUs for its next AI systems",
+    "s": "Three of Google's four next-generation TPU systems now run Arm host CPUs instead of x86 chips from Intel or AMD.",
+    "b": "Google's new TPU 8i Max system uses Google's own Arm-based Axion CPUs to prepare data and manage AI workloads, joining the TPU 8t and 8i. That makes three of Google's four next-generation TPU systems Arm-based on the CPU side. TPUs are Google's in-house AI chips and the main alternative to Nvidia GPUs for very large AI workloads.",
+    "why": "Read-through for <span class='tk'>$ARM</span>, at the expense of x86 CPUs from Intel and AMD inside AI servers.",
+    "simple": "<p>Every AI server has a main \"manager\" processor (CPU) next to its AI chips. Google is choosing Arm-designed CPUs over the traditional Intel and AMD kind, which is a win for Arm.</p>",
+    "src": [
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120320541735448611"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Chips",
+    "level": "low",
+    "t": "SpaceX designs its own version of Nvidia's top AI rack",
+    "s": "\"Kessel\" reworks Nvidia's Vera Rubin NVL72 rack with a harder-to-build circuit-board midplane.",
+    "b": "SemiAnalysis reports SpaceX is developing \"Kessel,\" a custom version of Nvidia's Vera Rubin NVL72 rack. It keeps the 72 GPU packages, 18 compute trays and 9 switch trays of Nvidia's standard design but replaces the internal NVLink cable cartridges with a passive printed-circuit-board midplane, specified as an 84-layer board that is much harder to manufacture.",
+    "why": "The largest AI buyers now have enough leverage to customize Nvidia's own hardware, which matters for board and component suppliers.",
+    "src": [
+     [
+      "@SemiAnalysis_",
+      "https://x.com/SemiAnalysis_/status/2120351564720136389"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Chips",
+    "level": "low",
+    "t": "Component oversupply call, and YMTC eyes an IPO",
+    "s": "An analyst expects cheap capacitors to be oversupplied; China's flash-memory leader targets an early-2027 listing.",
+    "b": "Analyst Zephyr expects an oversupply of low- to mid-end MLCCs as Taiwanese makers ramp up production and Japan's Murata refuses to give up market share, and sees consumer-electronics demand falling another 15–20% next year. Separately, China's biggest flash-memory maker YMTC is targeting an IPO in early 2027, per Bloomberg, after the listing was put on hold this month when China tightened approvals for share sales.",
+    "term": [
+     "MLCC",
+     "multilayer ceramic capacitor: a tiny component found by the hundreds in phones, PCs, cars and servers."
+    ],
+    "src": [
+     [
+      "@zephyr_z9",
+      "https://x.com/zephyr_z9/status/2120454586616135914"
+     ],
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120422033133609164"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Robotics",
+    "level": "med",
+    "t": "DeepMind releases Gemini Robotics 2.5",
+    "s": "Google's latest physical-AI model learns hundreds of everyday skills, from folding laundry to sorting car parts.",
+    "b": "Google DeepMind released Gemini Robotics 2.5, which it says can learn hundreds of everyday skills, from folding laundry and serving pastries to autonomously sorting car parts on a factory floor. It's DeepMind's newest \"physical AI\" model, meaning AI that controls a robot's body rather than only producing text or images. The release lands during CoRL, a major robot-learning conference, where NVIDIA also showed its GR00T 2 model for humanoids.",
+    "why": "Big labs are bringing their foundation-model playbook to robots, which speeds up general-purpose robotics.",
+    "simple": "<p>Instead of programming a robot step by step for one job, a model like this lets it learn many jobs from examples, a bit like how chatbots learned many topics by reading.</p>",
+    "src": [
+     [
+      "@GoogleDeepMind",
+      "https://x.com/GoogleDeepMind/status/2120169787896525104"
+     ],
+     [
+      "@humanoidsdaily",
+      "https://x.com/humanoidsdaily"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Robotics",
+    "level": "med",
+    "t": "A sense of touch lifts robot success from 48% to 70%",
+    "s": "Adding a small touch sensor made Physical Intelligence's robot model much better at real-world tasks.",
+    "b": "Adding a small touch encoder called LingBot-Touch, from embodied-AI company Robbyant, raised Physical Intelligence's π0.5 robot model from 48% to 70% success across 26 real-world tasks. Physical Intelligence builds general-purpose robot \"brains\" and in October opened a beta API that lets companies upload robot data and fine-tune its models.",
+    "why": "Supports a growing view that robots need senses beyond cameras to handle delicate everyday tasks, a possible new hardware category.",
+    "simple": "<p>Imagine trying to pick up an egg wearing thick gloves while only looking at it. Robots mostly work that way today. Giving them a sense of touch lets them feel what they're holding, and they get far better at tricky tasks.</p>",
+    "src": [
+     [
+      "@kimmonismus",
+      "https://x.com/kimmonismus/status/2120270079845859580"
+     ],
+     [
+      "@physical_int",
+      "https://x.com/physical_int"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Robotics",
+    "level": "low",
+    "t": "Robots are showing up in daily life",
+    "s": "Cybercabs on every block in Austin, Amazon's $250 home drone, and a nonstop laundry-folding demo.",
+    "b": "TheHumanoidHub reports Tesla's Cybercab robotaxis, which have no steering wheel, are now so common in downtown Austin you see one almost every block, and described a smooth first ride. Amazon launched Ring Robotics with two autonomous security devices: a $250 flying camera drone for homes and a $1,000 roaming robot for businesses. At CoRL in Austin, Dyna is running a continuous laundry-folding demo with its semi-humanoid robot Taku.",
+    "src": [
+     [
+      "@TheHumanoidHub",
+      "https://x.com/TheHumanoidHub/status/2120362083959140663"
+     ],
+     [
+      "@wallstengine",
+      "https://x.com/wallstengine/status/2120157896961122491"
+     ],
+     [
+      "@TheHumanoidHub (Dyna)",
+      "https://x.com/TheHumanoidHub/status/2120298447861367172"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Biotech",
+    "level": "med",
+    "t": "Beam's sickle cell gene-editing therapy hits its pivotal-trial goal",
+    "s": "A key late-stage win for base editing, a newer and more precise form of gene editing.",
+    "b": "Beam Therapeutics' base-editing therapy risto-cel met its main goal in a pivotal trial for sickle cell disease, as reported by BioPharma Dive and STAT's Adam Feuerstein. The treatment edits a patient's own blood stem cells outside the body and then returns them. A pivotal trial is the final large study companies use to apply for regulatory approval.",
+    "why": "A major validation for base editing as a platform, with read-through for <span class='tk'>$BEAM</span> and other gene-editing companies.",
+    "term": [
+     "Base editing",
+     "a gene-editing method that changes individual DNA letters without cutting both strands of DNA, designed to be more precise than standard CRISPR cutting."
+    ],
+    "simple": "<p>Sickle cell disease comes from a tiny error in one gene that makes red blood cells bend into a sickle shape. Gene-editing treatments like Beam's change the patient's own blood stem cells so their blood works better. Passing the big final trial is the last major step before asking regulators for approval.</p>",
+    "src": [
+     [
+      "@BioPharmaDive",
+      "https://x.com/BioPharmaDive/status/2120208440186622235"
+     ],
+     [
+      "@adamfeuerstein",
+      "https://x.com/adamfeuerstein"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Biotech",
+    "level": "low",
+    "t": "Democrats move to probe drug-pricing deals",
+    "s": "A new policy risk for pharma as Democrats take control of Congress.",
+    "b": "Incoming Democratic chairs of key congressional committees have taken a first step toward investigating the \"most-favored nation\" drug-pricing agreements between drugmakers and the Trump administration, STAT reports. These deals tie US drug prices to the lower prices paid in other wealthy countries. With Democrats taking control of Congress after the midterms, the deals could face hearings and document requests.",
+    "why": "Adds uncertainty for large pharma stocks heading into the new Congress.",
+    "src": [
+     [
+      "@statnews",
+      "https://x.com/statnews/status/2120352240942694822"
+     ]
+    ]
+   },
+   {
+    "tab": "tech",
+    "group": "Biotech",
+    "level": "low",
+    "t": "Longevity: cellular reprogramming enters human trials",
+    "s": "An investor's snapshot of how fast longevity science is moving.",
+    "b": "Investor Mgoes points out that cellular reprogramming, a technique that tries to return aged cells to a younger state, has entered its first human trial, alongside fast progress in gene therapies. It's an opinion thread rather than a single announcement, but a useful snapshot of the optimistic \"bio/acc\" view of longevity science.",
+    "src": [
+     [
+      "@m_goes_distance",
+      "https://x.com/m_goes_distance/status/2120270618046161199"
+     ]
+    ]
+   },
+   {
+    "tab": "reading",
+    "t": "Pretraining progress may come mostly from better data",
+    "s": "@dwarkesh_sp on an under-noticed paper.",
+    "src": [
+     [
+      "Open post",
+      "https://x.com/dwarkesh_sp/status/2120359285398155623"
+     ]
+    ]
+   },
+   {
+    "tab": "reading",
+    "t": "What CoreWeave's earnings mean for every neocloud",
+    "s": "@aleabitoreddit's read-through thread.",
+    "src": [
+     [
+      "Open post",
+      "https://x.com/aleabitoreddit/status/2120391635737649423"
+     ]
+    ]
+   },
+   {
+    "tab": "reading",
+    "t": "Fable 5.2 vs Gemini Carbon on the Fermi Paradox",
+    "s": "@emollick compares two new models on an open question.",
+    "src": [
+     [
+      "Open post",
+      "https://x.com/emollick/status/2120359214157603139"
+     ]
+    ]
+   }
+  ]
+ },
+ "history": []
+}

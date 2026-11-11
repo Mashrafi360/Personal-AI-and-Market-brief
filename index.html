@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: a quiet single reading column; serif headlines, hairline dividers, one accent, and a small dot for priority. */
+:root{
+  --bg:#fafaf9; --ink:#1c1c1e; --muted:#6e6e73; --faint:#a1a1a6; --line:#e7e7e9; --soft:#f2f2f3;
+  --accent:#2f4a8a;
+  --high:#d1453b; --med:#d08a1f; --low:#b8b8bd;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121214; --ink:#ececee; --muted:#9a9aa1; --faint:#6a6a70; --line:#2a2a2e; --soft:#1c1c1f;
+  --accent:#a9b8ec; --high:#ff7b70; --med:#f0b459; --low:#5a5a60; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121214; --ink:#ececee; --muted:#9a9aa1; --faint:#6a6a70; --line:#2a2a2e; --soft:#1c1c1f;
+  --accent:#a9b8ec; --high:#ff7b70; --med:#f0b459; --low:#5a5a60; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font:400 16.5px/1.65 var(--sans);-webkit-font-smoothing:antialiased;padding-block:0 72px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.g{padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+.in{max-width:680px;margin:0 auto}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+
+header{padding-block:40px 8px}
+.kicker{font-size:13px;color:var(--muted);letter-spacing:.01em}
+h1{font:500 clamp(26px,5vw,34px)/1.18 var(--serif);margin:10px 0 0;text-wrap:balance;letter-spacing:-.01em}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg)}
+.tabs{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);padding-top:22px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;font-size:14.5px;font-weight:500;color:var(--muted);padding:10px 0 12px;border-bottom:1.5px solid transparent;margin-bottom:-1px}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+
+main{padding-block:22px}
+.filters{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:14px;margin-bottom:6px}
+.filters button{color:var(--faint);font-weight:500}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{color:var(--ink)}
+
+.story{border-bottom:1px solid var(--line)}
+.head{display:block;width:100%;text-align:left;padding:22px 0}
+.title{display:flex;gap:12px;align-items:baseline}
+.dot{flex:0 0 auto;width:7px;height:7px;border-radius:50%;background:var(--low);transform:translateY(-3px)}
+.d-high{background:var(--high)} .d-med{background:var(--med)}
+.tt{font:500 20px/1.3 var(--serif);letter-spacing:-.005em;text-wrap:balance}
+.ss{display:block;color:var(--muted);font-size:15.5px;margin:6px 0 0 19px}
+.lab{display:block;font-size:12px;color:var(--faint);margin:0 0 6px 19px;letter-spacing:.02em}
+.head:hover .tt{color:var(--accent)}
+
+.body{padding:0 0 26px 19px;display:flex;flex-direction:column;gap:14px}
+.body p{margin:0}
+.why{color:var(--ink)}
+.why span,.term span,.pane .ph{display:block;font-size:12px;font-weight:600;color:var(--faint);letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+.term{font-size:15px;color:var(--muted)}
+.links{display:flex;gap:20px;font-size:14.5px;font-weight:500}
+.links button{color:var(--accent)}
+.links button[aria-expanded="true"]{color:var(--ink)}
+.pane{border-left:2px solid var(--line);padding-left:16px;display:flex;flex-direction:column;gap:8px;color:var(--ink)}
+.pane p{margin:0} .pane ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.src{font-size:13px;color:var(--faint);display:flex;flex-wrap:wrap;gap:2px 14px}
+.src a{color:var(--muted)}
+.tk{font-weight:600}
+
+.sec{padding-block:6px 30px}
+.sec h2{font-size:12px;font-weight:600;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;margin:0 0 4px}
+.top{list-style:none;margin:0;padding:0}
+.top li{padding:16px 0;border-bottom:1px solid var(--line)}
+.top li:last-child{border-bottom:0}
+.top button{text-align:left;display:block;width:100%}
+.top .tt{font-size:19px}
+.top .ss{margin-left:19px}
+.top button:hover .tt{color:var(--accent)}
+.watch{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;padding-top:10px}
+.watch dt{font-size:13px;font-weight:600;color:var(--muted);padding-top:2px}
+.watch dd{margin:0;min-width:0}
+.past{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:10px}
+.past select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 8px;max-width:100%}
+.web{color:var(--med)}
+.foot{font-size:13px;color:var(--faint);border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;gap:4px}
+
+@media (max-width:480px){.tt{font-size:18.5px}.tabs{gap:18px}}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+</head>
+<body>
+
+
+<header class="g"><div class="in">
+  <div class="kicker" id="kicker">Loading your brief…</div>
+  <h1 id="title">&nbsp;</h1>
+</div></header>
+<nav class="g" aria-label="Brief sections"><div class="in"><div class="tabs" role="tablist" id="tabs"></div></div></nav>
+<main class="g"><div class="in" id="view"></div></main>
+
+<script>
+const X=(h,id)=>`https://x.com/${h}/status/${id}`;
+const TABS=[
+ {id:"today",label:"Today"},
+ {id:"ai",label:"AI",filter:"group"},
+ {id:"news",label:"Markets",filter:"level"},
+ {id:"narratives",label:"Narratives",filter:"group"},
+ {id:"tech",label:"Chips, Robots & Bio",filter:"group"},
+ {id:"reading",label:"Reading"}
+];
+const GROUPS={news:["high","med","low"],narratives:["New","Growing","Split","1 voice"],tech:["Chips","Robotics","Biotech"],ai:["Models","Tools & agents","Research","Industry","Explainer"]};
+const LV={high:"High",med:"Medium",low:"Low"};
+const ORDER={high:0,med:1,low:2};
+const state={tab:"today",filter:"All",open:new Set(),pane:new Set()};
+let ITEMS=[], DATA=null, CUR=null;
+function useBrief(b){
+  CUR=b; ITEMS=b.items||[]; ITEMS.forEach((it,i)=>it.id="s"+i); state.open.clear(); state.pane.clear();
+  document.getElementById("kicker").textContent=[b.date_label,b.label,b.covered_label].filter(Boolean).join(" · ");
+  document.getElementById("title").textContent=b.title||"";
+}
+
+function dot(it){return `<i class="dot d-${it.level||"low"}" aria-label="${LV[it.level]||""} priority"></i>`}
+function storyHTML(it){
+  const open=state.open.has(it.id), d=state.pane.has(it.id+"detail"), s=state.pane.has(it.id+"simple");
+  const lab=it.tab==="narratives"?it.group:"";
+  const src=(it.src||[]).map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join("");
+  const body=open?`<div class="body">
+    ${it.b?`<p>${it.b}</p>`:""}
+    ${it.why?`<p class="why"><span>Why it matters</span>${it.why}</p>`:""}
+    ${it.mk?`<p class="why"><span>Market angle</span>${it.mk}</p>`:""}
+    ${it.term?`<p class="term"><span>${it.term[0]}</span>${it.term[1]}</p>`:""}
+    ${(it.detail||it.simple)?`<div class="links">${it.detail?`<button data-pane="detail" data-id="${it.id}" aria-expanded="${d}">In detail ${d?"−":"+"}</button>`:""}${it.simple?`<button data-pane="simple" data-id="${it.id}" aria-expanded="${s}">Explain simply ${s?"−":"+"}</button>`:""}</div>`:""}
+    ${d?`<div class="pane">${it.detail}</div>`:""}
+    ${s?`<div class="pane">${it.simple}</div>`:""}
+    ${src?`<div class="src">${src}</div>`:""}
+  </div>`:"";
+  return `<article class="story"><button class="head" data-open="${it.id}" aria-expanded="${open}">${lab?`<span class="lab">${lab}</span>`:""}<span class="title">${dot(it)}<span class="tt">${it.t}</span></span><span class="ss">${it.s}</span></button>${body}</article>`;
+}
+function renderTabs(){
+  document.getElementById("tabs").innerHTML=TABS.map(t=>`<button class="tab" role="tab" id="tab-${t.id}" aria-selected="${state.tab===t.id}" data-tab="${t.id}">${t.label}</button>`).join("");
+}
+function topList(tab){
+  return `<ol class="top">${ITEMS.filter(i=>i.tab===tab&&i.level==="high").map(i=>`<li><button data-jump="${i.id}" data-to="${tab}"><span class="title">${dot(i)}<span class="tt">${i.t}</span></span><span class="ss">${i.s}</span></button></li>`).join("")}</ol>`;
+}
+function renderToday(){
+  return `<section class="sec"><h2>AI</h2>${topList("ai")}</section>
+  <section class="sec"><h2>Markets</h2>${topList("news")}</section>
+  ${CUR.watch&&CUR.watch.length?`<section class="sec"><h2>${CUR.watch_title||"Watch"}</h2><dl class="watch">${CUR.watch.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl></section>`:""}
+  <div class="foot">${CUR.source==="web"?`<span class="web">Built from web sources because your laptop was offline, so narratives may be thin.</span>`:""}${(CUR.notes||[]).map(n=>`<span>${n}</span>`).join("")}
+  ${DATA.history&&DATA.history.length?`<label class="past">Earlier briefs <select id="past"><option value="cur">Latest · ${DATA.current.date_label} · ${DATA.current.edition}</option>${DATA.history.map((x,i)=>`<option value="${i}" ${CUR===x?"selected":""}>${x.date_label} · ${x.edition}</option>`).join("")}</select></label>`:""}</div>`;
+}
+function renderList(tabId){
+  const tab=TABS.find(t=>t.id===tabId);
+  let items=ITEMS.filter(i=>i.tab===tabId), f="";
+  if(tab.filter){
+    const key=tab.filter, present=GROUPS[tabId].filter(g=>items.some(i=>i[key]===g));
+    if(!["All",...present].includes(state.filter)) state.filter="All";
+    f=`<div class="filters" role="group" aria-label="Filter">${["All",...present].map(g=>`<button aria-pressed="${state.filter===g}" data-filter="${g}">${LV[g]||g}</button>`).join("")}</div>`;
+    if(state.filter!=="All") items=items.filter(i=>i[key]===state.filter);
+  }
+  if(tabId==="ai"||tabId==="tech") items=[...items].sort((a,b)=>ORDER[a.level]-ORDER[b.level]);
+  return f+items.map(storyHTML).join("");
+}
+function render(){renderTabs();document.getElementById("view").innerHTML=state.tab==="today"?renderToday():renderList(state.tab)}
+function go(tab){state.tab=tab;state.filter="All";if(location.hash!=="#"+tab)history.replaceState(null,"","#"+tab);render();window.scrollTo({top:0});document.getElementById("tab-"+tab)?.scrollIntoView({inline:"nearest",block:"nearest"})}
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-tab]"); if(g){go(g.dataset.tab);return}
+  const j=e.target.closest("[data-jump]"); if(j){state.open.add(j.dataset.jump);go(j.dataset.to);document.querySelector(`[data-open="${j.dataset.jump}"]`)?.scrollIntoView({block:"start"});window.scrollBy(0,-70);return}
+  const f=e.target.closest("[data-filter]"); if(f){state.filter=f.dataset.filter;render();return}
+  const o=e.target.closest("[data-open]"); if(o){const id=o.dataset.open;state.open.has(id)?state.open.delete(id):state.open.add(id);render();document.querySelector(`[data-open="${id}"]`)?.focus({preventScroll:true});return}
+  const p=e.target.closest("[data-pane]"); if(p){const k=p.dataset.id+p.dataset.pane;state.pane.has(k)?state.pane.delete(k):state.pane.add(k);render();document.querySelector(`[data-pane="${p.dataset.pane}"][data-id="${p.dataset.id}"]`)?.focus({preventScroll:true})}
+});
+document.addEventListener("change",e=>{if(e.target.id==="past"){const v=e.target.value;useBrief(v==="cur"?DATA.current:DATA.history[+v]);go("today")}});
+function fromHash(){const h=location.hash.slice(1);state.tab=TABS.some(t=>t.id===h)?h:"today";state.filter="All";render()}
+window.addEventListener("hashchange",fromHash);
+fetch("brief.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+ .then(d=>{DATA=d;useBrief(d.current);fromHash()})
+ .catch(()=>{document.getElementById("kicker").textContent="Couldn't load the brief. Try again in a minute."});
+</script>
+
+</body>
+</html>
